@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit(event)">
+                    <div>
+                        <label for="TaskName">TaskName</label>
+                        <input type="text" name="TaskName" id="TaskName">
+                    </div>
+                    <div>
+                        <label for="TaskDescription">TaskDescription</label>
+                        <input type="text" name="TaskDescription" id="TaskDescription">
+                    </div>
+                    <div>
+                        <label for="Deadline">Deadline</label>
+                        <input type="date" name="Deadline" id="Deadline">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="Submit" value="Submit" >
+                        <input type="Reset" value="Reset">
+                    </div>
+                </form>
+            <td>
+                <table class="list" id="storelist">
+                    <thead>
+                        <tr>
+                            <th>TaskName</th>
+                            <th>TaskDescription</th>
+                            <th>Deadline</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
